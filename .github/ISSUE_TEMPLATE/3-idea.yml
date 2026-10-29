@@ -1,0 +1,16 @@
+name: 💡 Idea
+description: A new card or feature you'd like.
+labels: [idea]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      placeholder: A card that shows my latest Strava run.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Who would use it, and why?
+      placeholder: Runners and gyms — to show they're active.

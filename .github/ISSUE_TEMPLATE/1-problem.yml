@@ -1,0 +1,51 @@
+name: 🐞 Something isn't working
+description: An error, a button that does nothing, a card that looks wrong.
+labels: [problem]
+body:
+  - type: markdown
+    attributes:
+      value: "**This issue is public.** Don't include your email, phone number, sign-in links or passwords."
+  - type: input
+    id: page
+    attributes:
+      label: Your page link (optional)
+      placeholder: tilevue.com/yourname
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      placeholder: I tapped Save and got "Something went wrong".
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How can we see it too?
+      placeholder: |
+        1. Open the editor
+        2. Add a Photo card
+        3. Tap Save
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device
+      options: [iPhone, Android phone, iPad / tablet, Windows computer, Mac, Other]
+    validations:
+      required: true
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      options: [Safari, Chrome, Instagram / TikTok in-app browser, Samsung Internet, Firefox, Edge, Other]
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot (optional)
+      description: Drag a screenshot here. Cover any private details first.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy
+      options:
+        - label: I didn't include my email, phone number or any password.
+          required: true
